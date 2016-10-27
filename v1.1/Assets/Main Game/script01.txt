@@ -1,0 +1,436 @@
+Xmas Game "Script"
+~*~*~*~*~*~*~*~*~*~*~
+Tutorial Level:
+0	Tutorial Level
+	INTRO:
+		Donner!
+		Thank goodness you're ok.
+		Santa and the other reindeer have been taken by the elves.
+		I guess you're average enough for them to forget you even exist.
+		...
+		... ...
+		... ... ...
+		Well, you should get your bearings.
+		I don't know much about reindeer biology but I think that if you want to move you should touch the screen.
+		Whatever that means.
+		Hopefully this hilarious joke stops you from thinking about how someone else might be in control of your actions.
+	JOKE:
+		Did you hear about the dyslexic devil worshipper?
+	OUTRO:
+		Very impressive!
+		I was particularly amazed by you ability to walk, and not face any danger or challenge.
+		It was a sight to behold.
+		They'll be singing songs about this for centuries to come.
+		The punchline seems like too small of a reward now.
+	PUNCHLINE:
+		He sold his soul to Santa.
+
+1	Level that introduces Mrs Claus, Donner, elves and pits:
+	INTRO:
+		I just remembered!
+		You can also jump by tapping the screen with a second finger.
+		Which is strange because reindeer don't have fingers.
+		Anyway, someone should go rescue the others, and it sure as tinsel isn't going to be me.
+		I'm just a sweet old lady.
+		You don't want to see an old lady get hurt, do you?
+		...
+		DO YOU???
+		Hmmf.
+		Get going, and for baubals sake watch out for any holes!
+		Oh, I almost forgot this hilarious joke.
+		If you manage to make it in one piece then I'll give you the punchline.
+	JOKE:
+
+	OUTRO:
+		Wow, you actually made it.
+		...
+		Oh, sorry.
+		I mean, wow you made it just like I knew you would!
+		Anyway, here's your reward.
+	PUNCHLINE:
+
+2	Level that introduces spikes and snowmen:
+	INTRO:
+		Being the lovely, kind-natured, lady I am, I gave the elves the benefit of the doubt.
+		Maybe they just tied, gagged, and blindfolded Santa and the eight actually popular reindeer for the ultimate suprise party.
+		But it turns out that things have turned more sinister.
+		More sinister?
+		Sinisterer???
+		Anywho, the elves have laid down some spikes, so keep an eye out!
+		You will recognise them by how spikey they are.
+		The elves have also recruited some snowmen to lob their balls at you.
+		Just avoid them, snowmen are pretty harmless.
+		Besides we are surrounded by snow, they would just come back, and in greater numbers.
+		How about another hilarous joke to keep spirits up?
+	JOKE:
+
+	OUTRO:
+		Snow Men?
+		More like, Snow problem!
+		And that wasn't even the punchline!
+		This is!
+	PUNCHLINE:
+
+3	Level where you rescue Dasher:
+	INTRO:
+		Good news!
+		Seems that just like when they left you, the elves are shedding some dead weight.
+		Reports from the woodland critters tell me that Dasher has been spotted up ahead.
+		Maybe if we can rescue her from the elves, she will join us.
+		And if not, then we will have to become her new captors, and force her to help us.
+		Either way, I'll reward the pair of you with another hilarious joke!
+	JOKE:
+
+	OUTRO:
+		I've spoken to Dasher and no force is necessary.
+		As the name would suggest Dasher is very fast.
+		Like a Chistmasy Usain Bolt.
+		Except a reindeer.
+		And not Jamaican.
+		And a female.
+		And named Dasher instead of Usain Bolt.
+		Now that I think about it Dasher is more of a long distance runner anyway.
+		How about that punchline then?
+	PUNCHLINE:
+
+4	Level that introduces polar bears:
+	INTRO:
+		...
+		... ...
+		... ... ...
+		Bear with me.
+		I have some news you might find polarising.
+		I don't want you to black out on me when I tell you.
+		I'm not trying to panda to the elves, but this is quite a spectacle.
+		And, I know this wont get me any brown-y points, but you are a bit of a sloth.
+		What, you want me to just get on with it?
+		I'll have you know these are koala-ty puns, sun-ny jim!
+		But sure, I'll get on with it.
+		There be bears in these parts! So be careful.
+		Heres a hilarious joke to help you erase those bear puns from your memory.
+	JOKE:
+
+	OUTRO:
+		Geez, you bear-ly made it out alive!
+		But we couldn't just stand around and wait for the ice caps to melt, destroying the hunting and breeding ground of the majestic polar bear, adding it to the list of animals wiped out by the human race.
+		Climate change is a big deal kiddo!
+		On an equally depressing note, here is your punchline!
+	PUNCHLINE:
+
+5	Level that introduces gingerbread men:
+	INTRO:
+		I tried to bake you some tasty treats to replenish your health.
+		Unfortunatly, the magic ovens we use in the north pole brought them to life.
+		Also, Unfortunatly, they immediately defected to the elven army.
+		Fortunately, they are completely harmless and should still heal you up.
+		They are just made of gingerbread after all.
+		Unfortunately, you will have to consume them whole, ending their short adorable lives.
+		Fortunately, their delicous gingery taste will help you forget the horrors of eating a living creature whole.
+		Also, fortunately, I have another hilarious joke!
+	JOKE:
+
+	OUTRO:
+		You took your time!
+		Maybe we would make faster progress if you didn't stop to stuff your kris-kringling face at every opportunity!
+		You do realise that your sugar high is being fueled by a cookie people genocide, no?
+		I don't think I should even tell you the punchline.
+		But I can't resist.
+	PUNCHLINE:
+
+6	Level where you rescue Dancer:
+	INTRO:
+		Great news!
+		The elves have got rid of another one of the less impressive reindeer.
+		The woodland critters have proven once again to be more useful than you and tell me that Dancer is nearby.
+		Another rescue mission, or kidnapping, I suppose.
+		I'll reward you both with a hilarious joke once you reunite.
+	JOKE:
+
+	OUTRO:
+		I've spoken to Dancer and she agrees that the woodland critters are far more useful than you are.
+		As the name would suggest Dancer is very nimble and maneuverable.
+		Like a Chistmasy Micheal Jackson.
+		Except a reindeer.
+		And not American.
+		And a female.
+		And named Dancer instead of Micheal Jackson.
+		Now that I think about it Dancer is more of a classical ballroom dancer anyway.
+		How about that punchline then?
+	PUNCHLINE:
+
+7	Level that introduces ice:
+	INTRO:
+		I'm afraid our plans have had a slip up.
+		Those pesky elves have shoveled away some of the snow, revealing the ice underneath.
+		If you wind up on some ice it's going to be tricky to regain control.
+		And they don't do ice skates in reindeer sizes.
+		Well, maybe they do.
+		You should really have looked into getting some reindeer snow gear.
+		I'm Mother Christmas, not your Mother.
+		If you insist on having things given to you for nothing, have a hilarious joke.
+	JOKE:
+
+	OUTRO:
+		Look who decided to show up.
+		How long do you think I've been waiting for you whilst you figure skate around?
+		We need to save Santa from the elves, not challenge Torvil and Dean.
+		I suppose your gracefullness is worthy of the punchline.
+	PUNCHLINE:
+
+8	Level that introduces penguins
+	INTRO:
+		The elves have recuited the penguins into their gang of yellow-eyed rascals.	
+		They said something about the penguin that snares you, or gets you hung by the chinstrap, gets to be the king of the arctic!
+		Or maybe it was emperor.
+		Something about becoming royal.
+		When I hear your name I just have very little attention.
+		You should really be humboldt that they talk about you at all.
+		And that they would come to the north pole just to murder you.
+		Because penguins live near the south pole, in places like Adelie, Africa, Fiordland and the Galapagos.
+		Also something about Erect-crested, Gentoo, Macaroni, Magellanic and Rockhopper penguins.
+		Look, I don't have all day to write penguin puns, I'm actually trying to save Santa.
+		But I did have time to write you this hilarious joke.
+	JOKE:
+
+	OUTRO:
+		You made it?
+		I mean, you made it!
+		I knew the penguins wouldn't rip you to shreds and devour your innards.
+		And thats why I wrote a punchline.
+	PUNCHLINE:
+
+9	Level where you rescue Prancer:
+	INTRO:
+		Splendid news!
+		Another one of the sub-standard reindeer has been found useless to the elves.
+		The woodland critters have once again saved the day, unlike you, and tell me it's Prancer.
+		I'm sure she will join us out of the goodness of her own heart.
+		Why would an animal forced to carry a fat man around the planet each year without pay want to be released into the wild?
+		Plus, she'll want to be there for the hilarious joke.
+	JOKE:
+
+	OUTRO:
+		I've spoken to Prancer and she's agreed to join us.
+		Also in unrelated news, you no longer have to work without pay.
+		As the name would suggest Prancer is very good at jumping.
+		Like a Chistmasy Dick Fosbury.
+		Except a reindeer.
+		And not American.
+		And a female.
+		And named Prancer instead of Dick Fosbury.
+		Now that I think about it Prancer is more of a long jumper anyway.
+		How about that punchline then?
+	PUNCHLINE:
+
+10	
+	INTRO:
+		
+	JOKE:
+
+	OUTRO:
+
+	PUNCHLINE:
+
+11
+	INTRO:
+		
+	JOKE:
+
+	OUTRO:
+
+	PUNCHLINE:
+
+12	Level where you rescue Vixen:
+	INTRO:
+		Marvelous news!
+		A reindeer far more attractive than you has been catching the eye of my informants.
+		Once again, you are yet to find anyone we are looking for, and the woodland critters have found Vixen.
+		This one is really a win win because I hear she likes being bound and gagged anyway.
+		I think she must be a few brussell sprouts short of a chirstmas dinner.
+		But hopefully she'll understand my hilarious joke.
+	JOKE:
+
+	OUTRO:
+		I've spoken to Vixen and she's agreed to join us without her bindings, because they creep me out.
+		As the name would suggest Vixen is very healthy.
+		Like a Chistmasy Jamie Oliver.
+		Except a reindeer.
+		And not British.
+		And a female.
+		And named Vixen instead of Jamie Oliver.
+		Now that I think about it Vixen is more of a pastry chef anyway.
+		How about that punchline then?
+	PUNCHLINE:
+
+13
+	INTRO:
+		
+	JOKE:
+
+	OUTRO:
+
+	PUNCHLINE:
+
+14
+	INTRO:
+		
+	JOKE:
+
+	OUTRO:
+
+	PUNCHLINE:
+
+15	Level where you rescue Comet:
+	INTRO:
+		Wonderful news!
+		The elves must really be running out of supplies because they've abandonned a reindeer that might actually be useful.
+		The woodland critters tell me they saw Comet last night, as well as a meteor shower.
+		If she tries to shoot off then I've got my trusty asteroid belt.
+		And when she sees that joining us is the best option I have another hilarious joke.
+	JOKE:
+
+	OUTRO:
+		I've spoken to Comet and she tells me that asteroids, comets and metoers aren't even the same thing.
+		As the name would suggest Comet is very tough.
+		Like a Chistmasy Dwayne "The Rock" Johnson.
+		Except a reindeer.
+		And not American.
+		And a female.
+		And named Comet instead of Dwayne "The Rock" Johnson.
+		Now that I think about it Comet is more of an MMA fighter anyway.
+		How about that punchline then?
+	PUNCHLINE:
+
+16
+	INTRO:
+		
+	JOKE:
+
+	OUTRO:
+
+	PUNCHLINE:
+
+17
+	INTRO:
+		
+	JOKE:
+
+	OUTRO:
+
+	PUNCHLINE:
+
+18	Level where you rescue Cupid:
+	INTRO:
+		Spectacular news!
+		There has been another reindeer sighting.
+		The woodland critters tell me the elves loved her too much to see her being hurt. It must be Cupid.
+		I'm sure you could imagine what it's like for someone to love you. Maybe.
+		Cupid is so lovely, I'm sure we wont have to use any physical force. As much as I'd love to.
+		There's nothing she loves more than a hilarious joke.
+	JOKE:
+
+	OUTRO:
+		I've spoken to Cupid and she says christmas is really just about love anyway.
+		What a nutcracker.
+		As the name would suggest Cupid is very good at getting up when she's knocked down.
+		Like a Chistmasy Chumbawamba.
+		Except a reindeer.
+		And not British.
+		And a female.
+		And named Cupid instead of Chumbawamba.
+		Now that I think about it  is more of a electronic post-progressive jive-step dub-core kind of musician anyway.
+		How about that punchline then?
+	PUNCHLINE:
+
+19
+	INTRO:
+		
+	JOKE:
+
+	OUTRO:
+
+	PUNCHLINE:
+
+20	Level that introduces wolves:
+	INTRO:
+		
+	JOKE:
+
+	OUTRO:
+
+	PUNCHLINE:
+
+21	Level where you rescue Blitzen:
+	INTRO:
+		Phenomenal news!
+		A reindeer far superior to you has been spotted majesticly grazing up ahead.
+		"Absolutely awe inspiring" is what the woodland critters said.
+		It can only mean one thing.
+		Blitzen!
+		Let us pray that she is gracious enough to help us in our feable attempts to rescue Santa.
+		For we would not stand a chance in even an unfair fight against such a mighty being.
+		I hope that this hilarious joke is up to her standards.
+	JOKE:
+
+	OUTRO:
+		I've spoken to Blitzen and she actually acknowledged my existence!
+		Out of her almighty benevolence she has agreed to help us.
+		Praise!
+		As the name would suggest Blitzen is very, very, very good at absolutely everything.
+		Like a Chistmasy Chuck Norris.
+		Except a reindeer.
+		And not American.
+		And a female.
+		And named Blitzen instead of Chuck Norris.
+		Now that I think about it Blitzen is more of a bad-ass than Chuck Norris anyway.
+		How about that punchline then?
+	PUNCHLINE:
+
+22
+	INTRO:
+		
+	JOKE:
+
+	OUTRO:
+
+	PUNCHLINE:
+
+23	Level where you rescue Santa:
+	INTRO:
+		
+	JOKE:
+
+	OUTRO:
+
+	PUNCHLINE:
+
+24	Level where you rescue Rudolph:
+	INTRO:
+		Some news, I guess.
+		A reindeer that, believe it or not, might actually be worse than you is bumbling around somewhere nearby.
+		The woodland critters weren't sure it was even worth reporting, but they discovered Rudolph wandering around in circles up ahead.
+		She's pretty feabile so she'll be easy to nab.
+		But she's such a guillable idiot that it shouldn't take much convincing to get her to come home anyway.
+		Even though neither of you deserve it, here's a hilarious joke.
+	JOKE:
+
+	OUTRO:
+		I've spoken to Rudolph and I wish I hadn't.
+		As the name would suggest Rudolph is very, terrible.
+		Like a Chistmasy Ivan IV of Russia.
+		Except a reindeer.
+		And not Russian.
+		And a female.
+		And named Rudolph instead of Ivan IV of Russia.
+		Now that I think about it Rubolph is more of a William I of England anyway.
+		How about that punchline then?
+	PUNCHLINE:
+		
+25	Krampus level:
+	INTRO:
+		
+	JOKE:
+
+	OUTRO:
+
+	PUNCHLINE:

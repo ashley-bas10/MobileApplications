@@ -1,0 +1,26 @@
+//Default
++	Regular ground
+
+//Functional tiles
+S	Start
+E	End
+M	Mrs Claus
+
+//Obstcles
+r	1X1 Rock
+T	2X1 Tree (Place T in tile that should be the base of the tree.)
+R	2X2 Rock (Place R in tile that should be bottom left of rock.)
+
+//Traps
+&	Snowman
+^	Spikes
+O	Pits
+I	Ice
+
+//Enemies
+1	Elf
+2	Polar Bear
+3	Penguin
+4	Gingerbread man
+5	Wolf
+6	Krampus
