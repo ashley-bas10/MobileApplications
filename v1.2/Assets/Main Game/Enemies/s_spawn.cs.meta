@@ -1,10 +1,12 @@
 fileFormatVersion: 2
 guid: 08b69d6c0f7be354faeb9e3b519a9399
-timeCreated: 1477521215
+timeCreated: 1478636689
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - elf: {instanceID: 0}
+  - gift: {fileID: 1000011340676562, guid: 946f122718214d54ca1f12354da28215, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

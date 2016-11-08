@@ -22,7 +22,7 @@ public class reindeer : MonoBehaviour {
     public int id;
 
     //Arrays that store particular values of our 5 level system. 
-    float[] OverworldSpeeds = {1.0f, 2.0f, 3.0f, 4.0f, 10.0f};
+    float[] OverworldSpeeds = {3.0f, 3.5f, 4.0f, 7.0f, 10.0f};
 	float[] BattleSpeeds    = {1.0f, 2.0f, 3.0f, 4.0f, 5.0f};
 	float[] Turnabilitys    = {1.0f, 2.0f, 3.0f, 4.0f, 50.0f};
 	float[] Jumps           = {1.0f, 2.0f, 3.0f, 4.0f, 5.0f};
@@ -134,4 +134,9 @@ public class reindeer : MonoBehaviour {
             if (flipped) { transform.GetChild(0).transform.right = new Vector3(-faceMe.x, -faceMe.y, 0); }
 		}
 	}
+
+    public float gethealth()
+    {
+        return health;
+    }
 }

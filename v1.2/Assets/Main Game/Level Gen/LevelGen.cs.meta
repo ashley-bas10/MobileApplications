@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 9c4ee0076c4899f4bab49faf61544971
-timeCreated: 1476223336
+timeCreated: 1478631107
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
@@ -14,6 +14,7 @@ MonoImporter:
   - BigRock: {fileID: 1000014075999788, guid: 203b24abb33b999408adc247a267fe74, type: 2}
   - Spikes: {fileID: 1000010826840868, guid: af9dcd94979c9234aa20dc966bea155c, type: 2}
   - Pits: {fileID: 110840, guid: 591f3dd14b91edc45b2ea40b133d9f17, type: 2}
+  - Elf: {fileID: 1000013577593608, guid: 77a2481bc1917e940ad55a2a56ddf770, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

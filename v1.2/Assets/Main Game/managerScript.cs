@@ -11,9 +11,16 @@ public class managerScript : MonoBehaviour {
 	//Can the player move?
 	public bool canMove;
 
-	void Start () {
-		//Load the level that was selected
-		this.GetComponent<LevelGen> ().loadLevel (PlayerPrefs.GetInt ("levelToPlay"));
+    //For the battle arena
+    public GameObject arena;
+    public Vector3 arenaLocation = new Vector3(-25, 0, 0);
+
+    void Start () {
+        //Spawn the battle arena
+        Instantiate(arena, arenaLocation, Quaternion.identity);
+
+        //Load the level that was selected
+        this.GetComponent<LevelGen> ().loadLevel (PlayerPrefs.GetInt ("levelToPlay"));
 
 		//Start the intro dialouge for this level
 		this.GetComponent<dialouge> ().playIntro (PlayerPrefs.GetInt ("levelToPlay"));
@@ -23,7 +30,16 @@ public class managerScript : MonoBehaviour {
     }
 
 	void Update(){
-		//Keep this (and the camera) on top of the player
-		transform.position = player.transform.position + Vector3.forward * -10;
-	}
+
+        if (battleOrOverworld)
+        {
+            //Centre on arena in battle mode
+            transform.position = arenaLocation + Vector3.forward * -10;
+        }
+        else
+        {
+            //Keep this (and the camera) on top of the player when not in battle mode
+            transform.position = player.transform.position + Vector3.forward * -10;
+        }
+    }
 }

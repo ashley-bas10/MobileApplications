@@ -61,21 +61,6 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ButtonManagerScript.cs" />
@@ -83,6 +68,7 @@
     <Compile Include="Assets\LevelSelectManager.cs" />
     <Compile Include="Assets\Main Game\Characters\Player\control.cs" />
     <Compile Include="Assets\Main Game\Characters\reindeer.cs" />
+    <Compile Include="Assets\Main Game\Death scene\fadein.cs" />
     <Compile Include="Assets\Main Game\Dialouge\dialouge.cs" />
     <Compile Include="Assets\Main Game\Enemies\s_attack.cs" />
     <Compile Include="Assets\Main Game\Enemies\s_elf.cs" />
@@ -91,6 +77,7 @@
     <Compile Include="Assets\Main Game\Enemies\s_spawnSnow.cs" />
     <Compile Include="Assets\Main Game\Level Gen\End.cs" />
     <Compile Include="Assets\Main Game\Level Gen\LevelGen.cs" />
+    <Compile Include="Assets\Main Game\Level Gen\elf.cs" />
     <Compile Include="Assets\Main Game\managerScript.cs" />
     <Compile Include="Assets\Main Game\samMovement.cs" />
     <Compile Include="Assets\PauseMenuScript.cs" />
@@ -100,8 +87,11 @@
     <None Include="Assets\Main Game\Level Gen\Key_Legend.txt" />
     <None Include="Assets\Main Game\script01.txt" />
     <None Include="Assets\Resources\Dialouge\Intro\0.txt" />
+    <None Include="Assets\Resources\Dialouge\Intro\1.txt" />
     <None Include="Assets\Resources\Dialouge\Outro\0.txt" />
+    <None Include="Assets\Resources\Dialouge\Outro\1.txt" />
     <None Include="Assets\Resources\Levels\0.txt" />
+    <None Include="Assets\Resources\Levels\1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

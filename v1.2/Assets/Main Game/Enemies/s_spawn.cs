@@ -11,6 +11,7 @@ public class s_spawn : MonoBehaviour
 	void Start ()
     {
         timer = 6.0f;
+        elf = this.GetComponent<s_elf>();
 	}
 
     // Update is called once per frame

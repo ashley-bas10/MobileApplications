@@ -40,7 +40,7 @@ Tutorial Level:
 		Oh, I almost forgot this hilarious joke.
 		If you manage to make it in one piece then I'll give you the punchline.
 	JOKE:
-
+		What athlete is warmest in the winter?
 	OUTRO:
 		Wow, you actually made it.
 		...
@@ -48,6 +48,7 @@ Tutorial Level:
 		I mean, wow you made it just like I knew you would!
 		Anyway, here's your reward.
 	PUNCHLINE:
+		A long jumper!
 
 2	Level that introduces spikes and snowmen:
 	INTRO:

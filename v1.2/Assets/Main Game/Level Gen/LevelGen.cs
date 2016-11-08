@@ -3,7 +3,7 @@ using System.Collections;
 
 public class LevelGen: MonoBehaviour
 {
-	//All the things the level gen has to spawn.
+    //All the things the level gen has to spawn.
 	public GameObject Ground;
     public GameObject MrsClaus;
 	GameObject Player;
@@ -14,16 +14,16 @@ public class LevelGen: MonoBehaviour
 //    public GameObject Snowman;
     public GameObject Spikes;
     public GameObject Pits;
-/*    public GameObject Ice;
+//    public GameObject Ice;
     public GameObject Elf;
-    public GameObject PolarBear;
-    public GameObject Penguin;
-    public GameObject GingerbreadMan;
-    public GameObject Wolf;
-    public GameObject Krampus;*/
-	
-	//These are set within the switch statement to be used after.
-	GameObject toBeSpawned;
+        /*public GameObject PolarBear;
+        public GameObject Penguin;
+        public GameObject GingerbreadMan;
+        public GameObject Wolf;
+        public GameObject Krampus;*/
+
+    //These are set within the switch statement to be used after.
+    GameObject toBeSpawned;
 	Vector3 offset;
 
 	void Start(){
@@ -90,6 +90,7 @@ public class LevelGen: MonoBehaviour
 				toBeSpawned = Tree;
 				offset = new Vector3(0, 0.5f, 0);
 				break;
+
 			//Big Rock
 			case "R":
 				toBeSpawned = BigRock;
@@ -104,11 +105,19 @@ public class LevelGen: MonoBehaviour
 				toBeSpawned = Spikes;
 				offset = Vector3.zero;
 				break;
+
 			//Pits
 			case "P":
 				toBeSpawned = Pits;
 				offset = Vector3.zero;
 				break;
+            //Elf
+            case "1":
+                toBeSpawned = Elf;
+                offset = Vector3.zero;
+                    //Ground cant be included with elf as elf moves
+                    Instantiate(Ground, new Vector3(_col, -_row, 0) + offset, Quaternion.identity);
+                break;
 
 
 
