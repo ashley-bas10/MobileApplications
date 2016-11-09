@@ -195,6 +195,6 @@ public class CharSelect : MonoBehaviour {
     //Back pressed, return to level select
     public void back()
     {
-        //application.load (level select);
+        SceneManager.LoadScene("LevelSelect");
     }
 }

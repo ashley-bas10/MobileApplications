@@ -14,6 +14,7 @@ public class control : MonoBehaviour {
 
     //For when the player falls in a pit
     public bool inPit = false;
+    public float pitTimer = 2.0f;
 
     //Bool for temp invinsibility after taking damage
     bool canBeDamaged = true;
@@ -106,69 +107,83 @@ public class control : MonoBehaviour {
             invisTimer += Time.deltaTime;
         }
 
-		//get canMove from the manager
-		canMove = GameObject.Find ("Manager").GetComponent<managerScript> ().canMove;
+        //Dont do any moving if you fell in a pit
+        if (!inPit)
+        {
+            //get canMove from the manager
+            canMove = GameObject.Find("Manager").GetComponent<managerScript>().canMove;
 
-		if (canMove && Input.GetMouseButton(0)) { //while not in dialouge and whilst finger is down do movement
-			Vector3 target = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-			target.z = 0;
+            if (canMove && Input.GetMouseButton(0))
+            { //while not in dialouge and whilst finger is down do movement
+                Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                target.z = 0;
 
-			//Stay still if you are already near the target otherwise do movement
-			if(Vector3.Distance(transform.position, target) > stoppingRadius){
-                stats.rotateTowards(target);
-
-                //Only move if we aren't moving into a wall.
-                RaycastHit2D hit = Physics2D.Raycast(transform.position, this.GetComponent<reindeer>().forward, 1.0f);
-                if (hit.collider != null)
+                //Stay still if you are already near the target otherwise do movement
+                if (Vector3.Distance(transform.position, target) > stoppingRadius)
                 {
-                    if (hit.collider.tag == "walls")
-                    { }
+                    stats.rotateTowards(target);
+
+                    //Only move if we aren't moving into a wall.
+                    RaycastHit2D hit = Physics2D.Raycast(transform.position, this.GetComponent<reindeer>().forward, 1.0f);
+                    if (hit.collider != null)
+                    {
+                        if (hit.collider.tag == "walls")
+                        { }
+                        else
+                        {
+                            stats.moveFowards();
+                        }
+                    }
                     else
                     {
                         stats.moveFowards();
                     }
                 }
-                else
+            }
+
+            //Jumping
+            if (Input.GetKeyDown(KeyCode.Space) && canMove)
+            {
+                jumping = true;
+            }
+            if (jumping)
+            {
+                jumpTimer += Time.deltaTime;
+
+                Vector3 temp = this.transform.position;
+
+                if (jumpTimer <= 0.5f)
                 {
-                    stats.moveFowards();
+                    this.transform.position = new Vector3(temp.x, temp.y, -jumpTimer / 2.0f);
                 }
-            }
-		}
+                if (jumpTimer > 0.5f && jumpTimer <= jumpLength - 0.5f)
+                {
+                    this.transform.position = new Vector3(temp.x, temp.y, -0.25f);
+                }
+                if (jumpTimer > jumpLength - 0.5f)
+                {
+                    this.transform.position = new Vector3(temp.x, temp.y, -(jumpLength - jumpTimer) / 2.0f);
+                }
+                if (jumpTimer >= jumpLength)
+                {
+                    this.transform.position = new Vector3(temp.x, temp.y, 0.0f);
+                    jumping = false;
+                    jumpTimer = 0.0f;
+                }
 
-        //Jumping
-        if(Input.GetKeyDown(KeyCode.Space) && canMove)
-        {
-            jumping = true;
+            }
         }
-        if (jumping)
+        else
         {
-            jumpTimer += Time.deltaTime;
-
-            Vector3 temp = this.transform.position;
-
-            if (jumpTimer <= 0.5f)
+            transform.localScale = Vector3.one;
+            if(pitTimer <= 0)
             {
-                this.transform.position = new Vector3(temp.x, temp.y, - jumpTimer / 2.0f);
+                SceneManager.LoadScene("Died");
             }
-            if (jumpTimer > 0.5f && jumpTimer <= jumpLength - 0.5f)
-            {
-                this.transform.position = new Vector3(temp.x, temp.y, -0.25f);
-            }
-            if (jumpTimer > jumpLength - 0.5f)
-            {
-                this.transform.position = new Vector3(temp.x, temp.y, -(jumpLength - jumpTimer) / 2.0f);
-            }
-            if (jumpTimer >= jumpLength)
-            {
-                this.transform.position = new Vector3(temp.x, temp.y, 0.0f);
-                jumping = false;
-                jumpTimer = 0.0f;
-            }
-
+            pitTimer -= Time.deltaTime;
+            transform.localScale = Vector3.one * pitTimer / 2.0f;
+            transform.rotation = Quaternion.Euler(0, 0, 3 * 360 * (pitTimer - 2.0f));
         }
-
-        
-
     }
 
     public void damageMe(float _dmg)
