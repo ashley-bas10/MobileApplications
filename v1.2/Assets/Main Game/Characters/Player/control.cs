@@ -7,6 +7,14 @@ public class control : MonoBehaviour {
 	//Set to prevent movement during dialouge. Starts false for intro dialouge.
 	public bool canMove = false;
 
+    //Used to tell when player is mid jump
+    public bool jumping = false;
+    float jumpLength;
+    float jumpTimer = 0.0f;
+
+    //For when the player falls in a pit
+    public bool inPit = false;
+
     //Bool for temp invinsibility after taking damage
     bool canBeDamaged = true;
     float invinsTime = 2.5f;
@@ -70,6 +78,9 @@ public class control : MonoBehaviour {
         //Set the current health to the health stat of picked reindeer
         health = stats.gethealth();
 
+        //Set jump length
+        jumpLength = stats.getJump();
+
         //Set width of health bar depending on health.
         healthbar.GetComponent<Image>().rectTransform.sizeDelta = new Vector2(stats.gethealth() / 5.0f * 800, 100);
 
@@ -123,6 +134,38 @@ public class control : MonoBehaviour {
                 }
             }
 		}
+
+        //Jumping
+        if(Input.GetKeyDown(KeyCode.Space) && canMove)
+        {
+            jumping = true;
+        }
+        if (jumping)
+        {
+            jumpTimer += Time.deltaTime;
+
+            Vector3 temp = this.transform.position;
+
+            if (jumpTimer <= 0.5f)
+            {
+                this.transform.position = new Vector3(temp.x, temp.y, - jumpTimer / 2.0f);
+            }
+            if (jumpTimer > 0.5f && jumpTimer <= jumpLength - 0.5f)
+            {
+                this.transform.position = new Vector3(temp.x, temp.y, -0.25f);
+            }
+            if (jumpTimer > jumpLength - 0.5f)
+            {
+                this.transform.position = new Vector3(temp.x, temp.y, -(jumpLength - jumpTimer) / 2.0f);
+            }
+            if (jumpTimer >= jumpLength)
+            {
+                this.transform.position = new Vector3(temp.x, temp.y, 0.0f);
+                jumping = false;
+                jumpTimer = 0.0f;
+            }
+
+        }
 
         
 

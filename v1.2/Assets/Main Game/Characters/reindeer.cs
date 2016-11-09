@@ -22,13 +22,13 @@ public class reindeer : MonoBehaviour {
     public int id;
 
     //Arrays that store particular values of our 5 level system. 
-    float[] OverworldSpeeds = {3.0f, 3.5f, 4.0f, 7.0f, 10.0f};
-	float[] BattleSpeeds    = {1.0f, 2.0f, 3.0f, 4.0f, 5.0f};
-	float[] Turnabilitys    = {1.0f, 2.0f, 3.0f, 4.0f, 50.0f};
-	float[] Jumps           = {1.0f, 2.0f, 3.0f, 4.0f, 5.0f};
-	float[] Damages         = {1.0f, 2.0f, 3.0f, 4.0f, 5.0f};
-	float[] Defences        = {1.0f, 2.0f, 3.0f, 4.0f, 5.0f};
-	float[] Healths         = {1.0f, 2.0f, 3.0f, 4.0f, 5.0f};
+    float[] OverworldSpeeds = {3.0f, 3.5f,  4.0f, 7.0f,  10.0f};
+	float[] BattleSpeeds    = {2.0f, 3.0f,  4.0f, 5.5f,  7.0f };
+	float[] Turnabilitys    = {1.0f, 2.0f,  3.0f, 4.0f,  50.0f};
+	float[] Jumps           = {1.0f, 1.25f, 1.5f, 1.75f, 2.0f };
+	float[] Damages         = {1.0f, 2.0f,  3.0f, 4.0f,  5.0f };
+	float[] Defences        = {1.0f, 2.0f,  3.0f, 4.0f,  5.0f };
+	float[] Healths         = {1.0f, 2.0f,  3.0f, 4.0f,  5.0f };
 
 	//Set stats of a reindeer using an array
 	public void setReindeer(int[] _stats){
@@ -68,6 +68,9 @@ public class reindeer : MonoBehaviour {
     //Needed on uni computers but not at home ???????
     bool flipped = false;
 
+    //For scaling because of jumps
+    float jumpHeight;
+
     //Direction the player wants to face
     Vector2 faceMe;
     public void Update()
@@ -83,21 +86,19 @@ public class reindeer : MonoBehaviour {
         //    Camera.main.gameObject.transform.position = new Vector3(this.transform.position.x, Camera.main.transform.position.y, -10f);
         //}
 
-
-
+        jumpHeight = - this.transform.position.z;
+        //Make sure body faces right direction
+        transform.localScale = (forward.x < 0) ? new Vector3(-(1 + jumpHeight), 1 + jumpHeight, 1) : new Vector3(1 + jumpHeight, 1 + jumpHeight, 1);
     }
 
     public void moveFowards(){
-		//Move forwards (to the right) at the correct speed for the current mode
+        //Move forwards (to the right) at the correct speed for the current mode
 		float speedToUse = Manager.battleOrOverworld ? battleSpeed : overworldSpeed;
 
         //Needed at uni not at home =(
         if (flipped) { transform.Translate(new Vector3(-forward.x, forward.y, 0) * speedToUse * Time.deltaTime); }
         else { transform.Translate(forward * speedToUse * Time.deltaTime); }
-       
-        //Make sure body faces right direction
-        transform.localScale = (forward.x < 0) ? new Vector3(-1, 1, 1) : new Vector3(1, 1, 1);
-        
+   
         //Needed at uni not home.
         flipped = (forward.x < 0);
     }
@@ -139,5 +140,10 @@ public class reindeer : MonoBehaviour {
     public float gethealth()
     {
         return health;
+    }
+
+    public float getJump()
+    {
+        return jump;
     }
 }
