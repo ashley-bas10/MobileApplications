@@ -78,6 +78,7 @@
     <Compile Include="Assets\Main Game\Level Gen\End.cs" />
     <Compile Include="Assets\Main Game\Level Gen\LevelGen.cs" />
     <Compile Include="Assets\Main Game\Level Gen\elf.cs" />
+    <Compile Include="Assets\Main Game\Level Gen\spikes.cs" />
     <Compile Include="Assets\Main Game\managerScript.cs" />
     <Compile Include="Assets\Main Game\samMovement.cs" />
     <Compile Include="Assets\PauseMenuScript.cs" />

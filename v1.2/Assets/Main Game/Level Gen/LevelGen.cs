@@ -107,7 +107,7 @@ public class LevelGen: MonoBehaviour
 				break;
 
 			//Pits
-			case "P":
+			case "O":
 				toBeSpawned = Pits;
 				offset = Vector3.zero;
 				break;

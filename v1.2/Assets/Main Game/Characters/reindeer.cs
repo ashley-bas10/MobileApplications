@@ -63,7 +63,7 @@ public class reindeer : MonoBehaviour {
 	//Movement
 	
 	//Forward direction used by movement
-	Vector3 forward = Vector3.right;
+	public Vector3 forward = Vector3.right;
 
     //Needed on uni computers but not at home ???????
     bool flipped = false;
@@ -86,6 +86,7 @@ public class reindeer : MonoBehaviour {
 
 
     }
+
     public void moveFowards(){
 		//Move forwards (to the right) at the correct speed for the current mode
 		float speedToUse = Manager.battleOrOverworld ? battleSpeed : overworldSpeed;
